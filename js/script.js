@@ -9,9 +9,9 @@ left_arrow.addEventListener('mouseout', function () {
     left_arrow.style.backgroundColor = "#1f3e50";
 });
 
-right_arrow.addEventListener('mouseover', function (event){
+right_arrow.addEventListener('mouseover', function (event) {
     right_arrow.style.backgroundColor = "#1f3e50";
 });
-right_arrow.addEventListener('mouseout', function (event){
+right_arrow.addEventListener('mouseout', function (event) {
     right_arrow.style.backgroundColor = "#4bcaff";
 });
