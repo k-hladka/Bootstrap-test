@@ -23,6 +23,8 @@
 
     --bg-first-div-in-main: #f9f9f9;
     --border-first-div-in-main: #e7e7e7;
+
+    --bg-contact-button: #414143;
 }
 
 .nav-link {
@@ -126,13 +128,16 @@
     top: 40vh;
 }
 
+.info button, .contact form button {
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
 .info button {
     width: 144px;
-    height: 45px;
     text-transform: uppercase;
-    padding: 10px 5px;
     color: var(--text-navbar);
-    border-radius: 5px;
     margin: 15px 30px 45px 0;
 }
 
@@ -266,16 +271,19 @@ main > div:first-of-type {
 .mainSquare p:last-of-type {
     text-align: center;
 }
-.video{
+
+.video {
     background: url("../img/base video.png") no-repeat center center;
     background-size: cover;
-    height: calc(550px /1.5);
+    height: calc(550px / 1.5);
     position: relative;
 }
-.video > div:first-of-type{
+
+.video > div:first-of-type {
     position: relative;
     top: 25%;
 }
+
 .youtube {
     position: relative;
     margin-top: 5px;
@@ -285,9 +293,58 @@ main > div:first-of-type {
     border: 1px solid var(--text-navbar);
     border-radius: 2px;
 }
-.youtube img{
+
+.youtube img {
     margin: 2px 26px;
 }
+
+.contact {
+    background: url("../img/Map.png") no-repeat center center;
+    background-size: cover;
+    height: 681px;
+}
+
+.contact form input, .contact form textarea {
+    text-align: center;
+    width: 15em;
+    height: 2rem;
+    border: none;
+    margin: 5px calc((20em - 15em) / 2);
+    border-radius: 5px;
+}
+
+.contact form input:first-of-type {
+    margin-top: 20px;
+}
+
+.contact form textarea {
+    height: 10rem;
+}
+
+.contact form {
+    width: 20em;
+    background: var(--text-navbar-hover);
+    opacity: 0.9;
+    position: relative;
+    left: calc(50% - (20em / 2));
+    top: 100px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px var(--bg-contact-button);
+}
+
+.contact form legend {
+    color: var(--text-navbar)
+}
+
+.contact form button {
+    width: 170px;
+    margin: 15px 0;
+    background-color: var(--bg-contact-button);
+    color: var(--text-navbar-hover);
+    border: none;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 950px) {
     .parent {
         background: url("../img/Layer 15(for small screen).png") no-repeat center center;
@@ -315,7 +372,8 @@ main > div:first-of-type {
     .circle {
         margin-bottom: -40px;
     }
-    .video > div:first-of-type{
+
+    .video > div:first-of-type {
         top: 10%;
     }
 }
