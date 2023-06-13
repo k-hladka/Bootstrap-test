@@ -24,7 +24,8 @@
     --bg-first-div-in-main: #f9f9f9;
     --border-first-div-in-main: #e7e7e7;
 
-    --bg-contact-button: #414143;
+    --bg-contact-button: #323234;
+    --shadow-contact-button: #0f0f11;
 }
 
 .nav-link {
@@ -343,6 +344,13 @@ main > div:first-of-type {
     color: var(--text-navbar-hover);
     border: none;
     border-radius: 5px;
+    box-shadow: 1px 1px 1px var(--shadow-contact-button);
+}
+footer{
+    background: var(--bg-contact-button);
+}
+footer .row div{
+    color: var(--text-navbar);
 }
 
 @media screen and (max-width: 950px) {
