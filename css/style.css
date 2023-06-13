@@ -112,11 +112,11 @@
     transition-duration: 1s;
 }
 
-.info, .info p {
+.info, .info p, .video p {
     color: var(--text-navbar)
 }
 
-.info span {
+.info span, .video span {
     font-weight: 450;
 }
 
@@ -266,7 +266,28 @@ main > div:first-of-type {
 .mainSquare p:last-of-type {
     text-align: center;
 }
-
+.video{
+    background: url("../img/base video.png") no-repeat center center;
+    background-size: cover;
+    height: calc(550px /1.5);
+    position: relative;
+}
+.video > div:first-of-type{
+    position: relative;
+    top: 25%;
+}
+.youtube {
+    position: relative;
+    margin-top: 5px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 40px;
+    border: 1px solid var(--text-navbar);
+    border-radius: 2px;
+}
+.youtube img{
+    margin: 2px 26px;
+}
 @media screen and (max-width: 950px) {
     .parent {
         background: url("../img/Layer 15(for small screen).png") no-repeat center center;
@@ -293,5 +314,8 @@ main > div:first-of-type {
 
     .circle {
         margin-bottom: -40px;
+    }
+    .video > div:first-of-type{
+        top: 10%;
     }
 }
