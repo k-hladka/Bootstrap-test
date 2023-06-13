@@ -18,6 +18,8 @@
     --bazigner-photo: 800px;
     --bazigner-logo: 85px;
     --signal-logo: 25px;
+
+    --bg-download-button-hover: #246a9542;
 }
 
 .nav-link {
@@ -101,6 +103,12 @@
     background: var(--text-navbar-hover);
 }
 
+.left-arrow:hover, .right-arrow:hover,
+.info button:first-of-type:hover,
+.info button:last-of-type:hover {
+    transition-duration: 1s;
+}
+
 .info, .info p {
     color: var(--text-navbar)
 }
@@ -128,6 +136,11 @@
 .info button:first-of-type {
     border: 1px solid var(--text-navbar);
     background: none;
+}
+
+.info button:first-of-type:hover,
+.info button:last-of-type:hover {
+    background-color: var(--bg-download-button-hover);
 }
 
 .info button:last-of-type {
@@ -167,7 +180,7 @@
 
 .circle {
     position: absolute;
-    bottom: 10vh;
+    bottom: 0;
     left: calc(50% - 15px);
 }
 
@@ -175,4 +188,31 @@
     background: var(--text-navbar-hover);
 }
 
+@media screen and (max-width: 950px) {
+    .parent {
+        background: url("../img/Layer 15(for small screen).png") no-repeat center center;
+    }
 
+    .info {
+        top: 20vh;
+        right: 25vw;
+    }
+
+    .info button {
+        margin: 0;
+        padding: 0;
+    }
+
+    .android, .apple {
+        margin: 0;
+        padding: 0;
+    }
+
+    .info > div:last-of-type {
+        margin-top: 20px;
+    }
+
+    .circle {
+        margin-bottom: -40px;
+    }
+}
